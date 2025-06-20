@@ -1,50 +1,95 @@
-# 📊 E-commerce Sales Dashboard
+# 📦 E-commerce Sales Analysis 
 
-This project contains an interactive **Power BI dashboard** for analyzing e-commerce sales data. It provides insights into key performance metrics including revenue trends, customer behavior, product performance, and geographic distribution.
+A complete end-to-end analytics solution that uses SQL, Excel, and Power BI to analyze and visualize e-commerce sales performance. This project is designed to provide insights into product trends, customer behavior, revenue, and operational performance.
 
-## 🚀 Features
+---
 
-- Dynamic visualizations and KPI cards
-- Time-series analysis of sales and profit
-- Product category and subcategory breakdown
-- Customer segmentation and behavior insights
-- Sales performance by country and region
-- Filterable slicers for time, region, and category
+## 🔍 Project Overview
 
-## 📂 Project Structure
+This project walks through:
+- 📊 Data visualization using **Power BI**
+- 🧮 Data preparation and ETL using **SQL**
+- 📑 Data storage and organization in **Excel**
 
-├── Dashboard_Sales.pbix # Power BI dashboard file
-├── Ecommerce_Sales_Data.xlsx # Raw data used in the dashboard
+---
+
+## 🗂️ Project Structure
+
+├── Ecommerce_Sales_Data.xlsx # Raw sales dataset
+├── SQL_Script.sql # SQL script for ETL and analysis
+├── Dashboard_Sales.pbix # Power BI dashboard report
 └── README.md # Project documentation
 
-## 📈 Data Overview
+yaml
+Copy
+Edit
 
-The data includes the following key columns:
+---
 
-- **Order ID**
-- **Order Date**
-- **Customer ID**
-- **Country/Region**
-- **Product Category/Subcategory**
-- **Units Sold**
-- **Unit Price**
-- **Revenue**
-- **Profit**
+## 🧾 Dataset Description
 
-> Note: You can replace or extend the data in `Ecommerce_Sales_Data.xlsx` and refresh the report in Power BI.
+The data represents e-commerce sales and includes the following key fields:
+
+- `invoice_id` – Unique identifier per transaction
+- `branch`, `city` – Store information
+- `customer_type`, `gender`
+- `product_line` – Product category
+- `unit_price`, `quantity`, `tax_pct`, `total`, `cogs`, `gross_income`
+- `date`, `time`, `rating`, `payment`
+
+---
+
+## 🧮 SQL Analysis & ETL
+
+Script: [`SQL_Script.sql`](SQL_Script.sql)
+
+Key Transformations:
+- Creating and loading the `sales` table
+- Adding derived columns: `time_of_day`, `day_name`, `month_name`
+- Data cleaning and enrichment
+
+Key Analyses:
+- 🛒 Product trends (e.g., best-selling products)
+- 💸 Revenue & cost patterns by month and category
+- 📍 City and branch performance
+- 👤 Customer segmentation and behavior
+- ⏱️ Time-based sales and ratings
+
+---
+
+## 📊 Power BI Dashboard
+
+File: [`Dashboard_Sales.pbix`](Dashboard_Sales.pbix)
+
+The Power BI dashboard includes:
+- KPI cards: Revenue, Profit, Average Rating
+- Sales trends by month, branch, and product line
+- Customer demographics: Gender, Type, Location
+- Time and weekday sales patterns
+- Filter panels for dynamic exploration
+
+> 📌 Note: Open this file using Power BI Desktop and refresh to load the latest data.
+
+---
 
 ## 🛠️ How to Use
 
-1. Open `Dashboard_Sales.pbix` in Power BI Desktop.
-2. Ensure the path to `Ecommerce_Sales_Data.xlsx` is valid (you may need to relink the data source).
-3. Click **Refresh** to update visuals.
-4. Use slicers and filters in the dashboard to interact with the data.
+### 1. SQL Setup
+- Import `Ecommerce_Sales_Data.xlsx` to a database (e.g., MySQL)
+- Run `SQL_Script.sql` for cleaning and transformations
 
-## 📌 Requirements
+### 2. Power BI
+- Open `Dashboard_Sales.pbix` with Power BI Desktop
+- Ensure the data source links to your dataset (Excel or DB)
+- Click **Refresh** to update visuals
 
-- [Power BI Desktop](https://powerbi.microsoft.com/desktop/)
-- Microsoft Excel (for data editing)
+---
 
-## 🙌 Acknowledgments
+## 📦 Tools & Technologies
 
-Built with ❤️ using Power BI and Excel to demonstrate data storytelling and business intelligence for e-commerce analytics.
+- **Power BI** – Data visualization
+- **MySQL / SQL** – Data transformation & querying
+- **Excel** – Data storage and lightweight analysis
+
+---
+ 
