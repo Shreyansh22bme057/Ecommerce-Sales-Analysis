@@ -32,7 +32,7 @@ This project walks through:
 - ⚙️ **SQL** – Data cleaning, transformation, and analysis
 - 📊 **Power BI** – Interactive dashboards and data visualization
 - 📁 **Excel** – Raw data storage and preprocessing
-- 🗃️ **MySQL** (or your DB of choice) – Database setup and querying
+- 🗃️ **MySQL** – Database setup and querying
 
 ---
 
