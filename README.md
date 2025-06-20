@@ -25,6 +25,17 @@ This project walks through:
 
 ---
 
+## 🛠️ Tech Stack
+
+**Languages & Tools Used:**
+
+- ⚙️ **SQL** – Data cleaning, transformation, and analysis
+- 📊 **Power BI** – Interactive dashboards and data visualization
+- 📁 **Excel** – Raw data storage and preprocessing
+- 🗃️ **MySQL** (or your DB of choice) – Database setup and querying
+
+---
+
 ## 🧾 Dataset Description
 
 The data represents e-commerce sales and includes the following key fields:
@@ -84,11 +95,3 @@ The Power BI dashboard includes:
 
 ---
 
-## 📦 Tools & Technologies
-
-- **Power BI** – Data visualization
-- **MySQL / SQL** – Data transformation & querying
-- **Excel** – Data storage and lightweight analysis
-
----
- 
