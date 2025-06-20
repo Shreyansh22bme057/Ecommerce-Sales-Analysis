@@ -1,3 +1,0 @@
-*.sql linguist-language=SQL
-*.pbix linguist-documentation
-*.xlsx linguist-generated
