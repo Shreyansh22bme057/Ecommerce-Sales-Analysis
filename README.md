@@ -16,13 +16,12 @@ This project walks through:
 ## 🗂️ Project Structure
 
 ├── Ecommerce_Sales_Data.xlsx # Raw sales dataset
-├── SQL_Script.sql # SQL script for ETL and analysis
-├── Dashboard_Sales.pbix # Power BI dashboard report
-└── README.md # Project documentation
 
-yaml
-Copy
-Edit
+├── SQL_Script.sql # SQL script for ETL and analysis
+
+├── Dashboard_Sales.pbix # Power BI dashboard report
+
+└── README.md # Project documentation
 
 ---
 
